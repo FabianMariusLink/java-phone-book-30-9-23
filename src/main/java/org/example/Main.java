@@ -21,5 +21,8 @@ public class Main {
         System.out.println(phoneBook1.toString());
 
         System.out.println("Hier der gesuchte Kontakt: " + phoneBook1.searchContact("Ott"));
+        phoneBook1.editContact("Ott","last name", "Link");
+        //phoneBook1.deleteContact("Link");
+        System.out.println(phoneBook1);
     }
 }
