@@ -20,7 +20,24 @@ public class PhoneBook {
                 return contact;
             }
         }
-        return null;
+        System.out.println("Contact dont exist");
+                return null;
+    }
+
+    public void editContact(String lastName, String fieldToEdit, String newEntry){
+        if(this.searchContact(lastName) != null){
+            if (fieldToEdit.equals("first name")) {
+                this.searchContact(lastName).setFirstName(newEntry);
+            }
+            System.out.println("Contact has been edited");
+        }
+
+    }
+
+    public void deleteContact(String lastName){
+        if(this.searchContact(lastName) != null){
+            contacts.remove(this.searchContact(lastName));
+        }
     }
 
     public List<Contact> getContacts() {
