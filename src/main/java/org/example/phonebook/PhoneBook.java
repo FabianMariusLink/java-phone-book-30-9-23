@@ -10,6 +10,10 @@ public class PhoneBook {
     public PhoneBook() {
     }
 
+    public void addContact(Contact contact){
+        this.contacts.add(contact);
+    }
+
     public List<Contact> getContacts() {
         return contacts;
     }
