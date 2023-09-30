@@ -19,5 +19,7 @@ public class Main {
         phoneBook1.addContact(contact4);
         phoneBook1.addContact(contact5);
         System.out.println(phoneBook1.toString());
+
+        System.out.println("Hier der gesuchte Kontakt: " + phoneBook1.searchContact("Ott"));
     }
 }

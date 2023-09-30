@@ -14,6 +14,15 @@ public class PhoneBook {
         this.contacts.add(contact);
     }
 
+    public Contact searchContact(String lastName) {
+        for (Contact contact : contacts) {
+            if (contact.getLastName().equals(lastName)) {
+                return contact;
+            }
+        }
+        return null;
+    }
+
     public List<Contact> getContacts() {
         return contacts;
     }
