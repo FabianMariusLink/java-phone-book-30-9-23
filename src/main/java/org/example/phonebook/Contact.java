@@ -5,7 +5,7 @@ import com.sun.source.tree.ClassTree;
 import java.util.Objects;
 
 public class Contact {
-    private int id;
+    private final int id;
     private static int totalContacts = 0;
     private String lastName;
     private String firstName;
